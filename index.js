@@ -19,14 +19,14 @@ let  InputTeamsNames = function() {
 
 }
 
-let TeamArray = []
+let selectedTeamArray = []
 
 
 let generateMemberFromInput = function(){
-    const TeamDisplayOutput = document.getElementById("teamsOutput");
-    TeamDisplayOutput.innerHTML = InputTeamsNames()
+    const selectedTeam = document.getElementById("SelectedTeam");
+    selectedTeam.value = InputTeamsNames()
 
-    TeamArray.push(InputTeamsNames())
+    selectedTeamArray.push(InputTeamsNames())
 
     
 }
@@ -42,3 +42,9 @@ const TeamCountNode = document.getElementById("numberTeam");
 return TeamnumberNode
 
 }
+
+let TeamCreator = function(){
+
+}
+
+

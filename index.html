@@ -19,6 +19,9 @@
                 <div class="col">
                     <label for="TeamInput">Enter Team Members Names</label>
                     <input type="text" class="form-control" id="TeamInput" placeholder="johan , Doe">
+                    <div class="col mt-4">
+                        <button id="teamsGenerator"  onclick="generateMemberFromInput()" class="btn btn-warning mt-2"> Add Member</button>
+                    </div>
   
                 </div>
                 <div class="col mt-4">
@@ -27,6 +30,12 @@
                 </div>
                 <div class="col mt-4">
                     <button id="teamsGenerator"  onclick="generateMemberFromInput()" class="btn btn-warning mt-2"> Generator Teams</button>
+                </div>
+
+                <div class="col mt-4">
+                    <h6>Members Waiting To Be Assign Team</h6>
+                    <input type="text" class="form-control" id="SelectedTeam" value="">
+                    
                 </div>
             </div>
             <div class="col mt-4" >
