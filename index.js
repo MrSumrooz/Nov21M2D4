@@ -21,7 +21,7 @@ let createTeams = function(){
     
 
     for(let i =0; i < teamNumber.value; i++){
-        teamRow.innerHTML += `<div  class="col-2 team">
+        teamRow.innerHTML += `<div  class="col team">
                                     <h6>Teams:${i + 1} </h6>
                                     <ul class="list-group "> 
                                     
@@ -35,7 +35,7 @@ let createTeams = function(){
 
 
 let assign = function(){
-    let teams = document.querySelector(".team")
+    let teams = document.querySelectorAll(".team")
     const Person = document.getElementById("Team-List").children[0]
     
 
