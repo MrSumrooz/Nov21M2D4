@@ -1,19 +1,44 @@
-let teamMembers = []
+
 
 const inputTeam = document.getElementById("TeamInput");
-const TeamCountNode = document.getElementById("numberTeam");
-const TeamDisplayoutput = document.getElementById("teamsOutput");
-const Genratebuttons = document.getElementById("teamsGenerator");
+
 
 
 
 
 
 let  InputTeamsNames = function() {
-    alert("hi")
-    output.innerHTML = "Hi this is New li";
-    const values = input.value;
-    const total = sums.value;
-    let person = values.split(",");
+    
+    let teamInputFromUser = inputTeam.value
+
+    teamInputFromUser.split(",")
+
+    return teamInputFromUser
+    
+
+
+}
+
+let TeamArray = []
+
+
+let generateMemberFromInput = function(){
+    const TeamDisplayOutput = document.getElementById("teamsOutput");
+    TeamDisplayOutput.innerHTML = InputTeamsNames()
+
+    TeamArray.push(InputTeamsNames())
+
+    
+}
+
+
+let TeamNumber = function(){
+const TeamCountNode = document.getElementById("numberTeam");
+
+    let TeamnumberNode = 0
+
+    TeamnumberNode = TeamCountNode.value
+
+return TeamnumberNode
 
 }
